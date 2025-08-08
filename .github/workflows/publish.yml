@@ -25,12 +25,11 @@ jobs:
       - name: Install R dependencies
         run: Rscript -e 'install.packages(c("tidyverse", "lubridate", "ggplot2", "gt"))'
 
-      - name: Render site
-        run: quarto render
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _site
-          publish_branch: gh-pages
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROJECT_KEY: ${{ secrets.PROJECT_KEY }}
+          API_KEY: ${{ secrets.API_KEY }}
