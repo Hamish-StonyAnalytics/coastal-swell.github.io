@@ -1,11 +1,13 @@
 name: Publish Quarto site
 
 on:
-  schedule:
-    - cron: "*/15 * * * *" # every 15 minutes
-  workflow_dispatch: # allow manual trigger
+#  schedule:
+#    - cron: "*/15 * * * *" # every 15 minutes
+#  workflow_dispatch: # allow manual trigger
   push:
-      branches: 
+    paths:
+      - "swell_data.csv"
+    branches: 
       - main
       - gh-pages
 
