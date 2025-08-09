@@ -11,12 +11,16 @@ library(gt)
 
 df_data <- read.csv('swell_data.csv', header = TRUE)
 df_data$record_date <- dmy_hm(df_data$record_date)
-df_data$write_date <- ymd_hms(df_data$write_date)
+#df_data$write_date <- ymd_hms(df_data$write_date)
+df_data <- df_data %>% 
+  select(-write_date) 
+df_data <- unique(df_data)
+
 df_data$direction <- as.numeric(df_data$direction)
 df_data$peak_period <- as.numeric(df_data$peak_period)
 df_tidy <- tail(df_data) %>% 
   arrange(desc(record_date)) %>% 
-  select(-highest_tenth, -write_date) %>% 
+  select(-highest_tenth) %>% 
   rename("Dir" = compass) %>% 
   rename("Bearing" = direction) %>% 
   rename("Peak Period" = peak_period) %>% 
