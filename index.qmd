@@ -3,7 +3,10 @@ title: "Coastal Swell (last 5 records)"
 ---
 
 ```{r, include=FALSE}
-library(tidyverse)
+#library(tidyverse)
+library(dplyr)
+library(tidyr)
+library(lubridate)
 library(gt)
 ```
 
