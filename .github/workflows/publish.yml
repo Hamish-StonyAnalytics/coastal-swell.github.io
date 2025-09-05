@@ -27,7 +27,7 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Install R dependencies
-        run: Rscript -e 'install.packages(c("tidyverse", "lubridate", "ggplot2", "gt"))'
+        run: Rscript -e 'install.packages(c("dplyr", "lubridate", "tidyr", "gt"))'
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
