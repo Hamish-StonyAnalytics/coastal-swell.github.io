@@ -1,16 +1,16 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Coastal Swell (last 5 records)",
-    "section": "",
-    "text": "metric\n2025-09-25 05:39:00\n2025-09-25 05:24:00\n2025-09-25 05:09:00\n2025-09-25 04:59:00\n2025-09-25 04:39:00\n2025-09-25 04:29:00\n\n\n\n\nDir\nW\nW\nW\nW\nW\nW\n\n\nBearing\n269\n276\n276\n276\n272\n272\n\n\nPeak Period\n11.1\n14.3\n14.3\n14.3\n13.3\n13.3\n\n\nMean Period\n7.1\n7.1\n7.1\n7.1\n7.3\n7.3\n\n\nMax Wave\n2.24\n2.38\n2.38\n2.38\n2.27\n2.27\n\n\nSig Height\n1.48\n1.47\n1.47\n1.47\n1.54\n1.54"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Coastal Swell (last 5 records)",
+    "section": "",
+    "text": "metric\n2025-09-25 11:39:00\n2025-09-25 10:59:00\n2025-09-25 10:39:00\n2025-09-25 10:29:00\n2025-09-25 10:09:00\n2025-09-25 09:59:00\n\n\n\n\nDir\nW\nW\nW\nW\nW\nW\n\n\nBearing\n268\n270\n270\n270\n273\n273\n\n\nPeak Period\n14.3\n10\n14.3\n14.3\n13.3\n13.3\n\n\nMean Period\n5.5\n5.8\n5.8\n5.8\n6.6\n6.6\n\n\nMax Wave\n2.58\n2.91\n2.3\n2.3\n2.28\n2.28\n\n\nSig Height\n1.52\n1.53\n1.4\n1.4\n1.48\n1.48"
   }
 ]
